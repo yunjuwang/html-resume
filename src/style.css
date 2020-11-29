@@ -1,0 +1,220 @@
+*{
+/*   border: black solid 1px; */
+/*   font-family: "微軟正黑體",sans-serif; */
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+
+  background-image: linear-gradient(90deg, #FFEFB0 25%, #6ec5b8 100%);
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+h1{
+  letter-spacing: 5px;
+}
+h1 span{
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+h2{
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+h2::before{
+  content:" ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #6ec5b8;
+  margin-right: 10px;
+  position:relative;
+  bottom: 3px;
+  transform: rotate(45deg);
+/*   vertical-align: text-top; */
+}
+h3{
+  margin: 0;
+  color: #6ec5b8 ;
+}
+h4{
+  margin: 0;
+  margin-top: 20px;
+}
+h5{
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+a{
+  color: initial;
+  text-decoration: none;
+}
+hr{
+  border: none;
+  border-bottom: solid 3px #6ec5b8;
+  width: 70%;
+  margin-left: 0;
+}
+
+.resume{
+  display: flex;
+  max-width: 800px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  
+  background-color: #fff;
+  border-radius: 20px;
+  
+  opacity: 0.8;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  transition: 0.5s;
+}
+.resume:hover{
+  opacity: 1;
+  box-shadow: 5px 5px 45px rgba(0,0,0,0.4);
+  transform: translate(-2px,-2px);
+}
+.block{
+  transition: 0.5s
+}
+.block:hover{
+  background-color: #f7f7f7;
+}
+.left, .right{
+  padding: 5px;
+}
+.left{
+  padding-right: 30px;
+  flex: 5;
+  border-right: solid 1px #6ec5b8;
+}
+.buttons{
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.btn{
+  border: solid 3px #6ec5b8;
+  padding: 5px 18px;
+  margin-right: 10px;
+  color: #6ec5b8;
+  transition: 0.5s;
+}
+.btn.fill{
+  background-color: #6ec5b8;
+  color: white;
+}
+.btn:hover{
+  box-shadow: 0px 0px 10px #6ec5b8;
+}
+.listSkill .bar, .listLanguage .bar{
+/*   width: 150px; */
+  width: 50%;
+  height: 8px;
+  border: solid 2px #6ec5b8;
+  border-radius: 4px;
+  overflow: hidden;
+/*   flex-shrink: 0; */
+}
+.listSkill li, .listLanguage li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+.listLanguage li span{
+  font-size: 10px;
+}
+.value{
+  height: 100%;
+  background-color: #6ec5b8;
+  background: linear-gradient(45deg, #FFEFB0 0%, #6ec5b8 100%);  
+  animation: 1s vani;
+}
+.value.v5{
+  width: 100%;
+}
+.value.v4{
+  width: 80%;
+}
+.value.v3{
+  width: 60%;
+}
+.value.v2{
+  width: 40%;
+}
+@keyframes vani{
+  0% {
+    width: 0%;
+  }  
+}
+.right{
+  padding-left: 30px;
+  padding-top: 250px;
+  flex: 7;
+}
+.decoration{
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  background: linear-gradient(225deg, #FFEFB0 25%, #6ec5b8 100%);  
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 40px;
+  top: 10px;
+
+  background-color: #fff;
+  background-image: url("https://googledrive.com/host/1VcN7ycAFzdnpmdnYEOdet3SXi5FzCnxFF");
+  background-position: center center;
+  background-size: cover;
+}
+
+.listExperience>li, .listEducation>li{  
+  display: flex; 
+  margin-bottom: 10px;
+}
+
+.listExperience>li ul, .listEducation>li ul{
+  border-left: solid 4px;
+  padding-left: 10px;
+}
+.listExperience>li:nth-child(1) ul, .listEducation>li:nth-child(1) ul{
+   /* 綠色 */
+   border-color: #6ec5b8; 
+}
+.listExperience>li:nth-child(2) ul, .listEducation>li:nth-child(2) ul{
+   border-color: #9dd3b6; 
+}
+.listExperience>li:nth-child(3) ul{
+   border-color: #e1e6b2; 
+}
+.listExperience>li:nth-child(4) ul{
+   /* 黃色 */
+   border-color: #FFEFB0; 
+}
+.year{
+  line-height: normal;
+  text-align: center;
+  margin-right: 10px;
+}
+
